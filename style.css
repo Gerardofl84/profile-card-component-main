@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+ /*Primary*/
+  --dark_cyan: hsl(185, 75%, 39%);
+  --very_dark_desaturated_blue: hsl(229, 23%, 23%);
+  --dark_grayish_blue: hsl(227, 10%, 46%);
+
+ /*Neutral*/
+  --dark_gray: hsl(0, 0%, 59%)
+}
+
+body {
+  background-color: var(--dark_cyan);
+  max-width: 1440px;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+  background-position: -270px -500px, 730px 330px;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  color: var(--very_dark_desaturated_blue);
+}
+
+p {
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  color: var(--dark_grayish_blue);
+}
+
+span {
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  color: var(--dark_grayish_blue);
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  z-index: 1;
+  position: relative;
+  top: -48px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.flex-container {
+  max-width: 1440px;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  background-color: white;
+  margin: 1.5rem;
+  width: 350px;
+  height: 373px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.up-card {
+  max-width: 350px;
+}
+
+.name h2, p {
+  position: relative;
+  top: -30px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.stats {
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: -10px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 5;
+  border-top: 1px solid lightgray;
+}
